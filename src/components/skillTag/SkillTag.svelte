@@ -7,7 +7,7 @@
 	<div class="tag__icon h-full w-1/3 flex items-center justify-center">
 		<Icon class="text-md" icon="mdi:tag" />
 	</div>
-	<div class="tag__text h-full w-2/3 flex items-center justify-center ">
+	<div class="tag__text h-full w-2/3 flex items-center justify-center text-sm ">
 		{tag}
 	</div>
 </div>

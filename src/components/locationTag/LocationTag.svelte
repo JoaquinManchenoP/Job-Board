@@ -7,7 +7,7 @@
 	<div class="icon">
 		<Icon icon={'material-symbols:location-on'} />
 	</div>
-	<div class="text">
+	<div class="text text-sm">
 		{location}
 	</div>
 </div>

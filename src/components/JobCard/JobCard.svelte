@@ -2,25 +2,32 @@
 	import SkillTag from '../skillTag/SkillTag.svelte';
 	import LocationTag from '../locationTag/LocationTag.svelte';
 	import SalaryTag from '../salaryTag/SalaryTag.svelte';
+	import JobType from './JobType.svelte';
 </script>
 
-<div class="job__card h-36 w-full bg-green-300 min-w-fit">
-	<div class="card__container h-full w-full flex bg-purple-600">
-		<div class="left__side h-full w-full bg-orange-600">
-			<div class="job__title h-2/6 w-full bg-red-500">devops</div>
+<div class="job__card h-36 w-full border-solid border-2 rounded-md shadow-lg  ">
+	<div class="card__container h-full w-full flex">
+		<div class="left__side h-full w-full">
+			<div class="job__title h-2/6 w-full flex items-center">
+				<div class="job__title ml-3">
+					<span class="text-xl">Devops Engineer</span>
+				</div>
+			</div>
 			<div class="h-4/6 w-full">
-				<div class="job__type h-9 w-ful flex bg-yellow-400 space-x-1 ">
-					<div class="type h-9 w-32 flex items-center justify-center bg-green-400">development</div>
-					<div class="skills flex items-center space-x-2">
+				<div class="job__type h-9 w-ful flex space-x-1 ">
+					<div class="type h-9 w-32 flex items-center justify-center pl-2">
+						<JobType />
+					</div>
+					<div class="skills flex items-center space-x-2 pl-2">
 						<SkillTag tag={'React'} />
 						<SkillTag tag={'Svelte'} />
 						<SkillTag tag={'React'} />
 					</div>
 				</div>
 
-				<div class="salary__location h-4/6 w-full bg-purple-400 flex items-center space-x-3">
+				<div class="salary__location h-4/6 w-full flex items-center space-x-3 pl-2">
 					<div class="salary">
-						<SalaryTag salary={'100,000'} />
+						<SalaryTag salary={'100,000 - 200,000'} />
 					</div>
 					<civ class="location">
 						<LocationTag location={'Quito, Ecuador'} />
@@ -28,9 +35,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="right__side h-full w-28 bg-red-500">
-			<div class="employer">google</div>
-			<div class="time__posted">2 days ago</div>
+		<div class="right__side h-full w-28 space-y-10">
+			<div class="employer text-sm mt-3">Google</div>
+			<div class="time__posted text-sm font-light">2 days ago</div>
 		</div>
 	</div>
 </div>
