@@ -36,8 +36,8 @@
 			</div>
 		</div>
 		<div class="right__side h-full w-28 space-y-10">
-			<div class="employer text-sm mt-3">Google</div>
-			<div class="time__posted text-sm font-light">2 days ago</div>
+			<div class="employer text-sm font-semibold mt-3">Google</div>
+			<div class="time__posted text-sm font-extralight">2 days ago</div>
 		</div>
 	</div>
 </div>
